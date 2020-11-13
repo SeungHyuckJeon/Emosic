@@ -1,18 +1,15 @@
-# Emotion
-This software recognizes human faces and their corresponding emotions from a video or webcam feed. Powered by OpenCV and Deep Learning.
+# Emosic
+이 프로젝트는 https://github.com/petercunha/Emotion.git 의 forked Project임.
 
-![Demo](https://github.com/petercunha/Emotion/blob/master/demo/demo.gif?raw=true)
+emotion 프로젝트를 웹에서 확인할 수 있게 만들고, 인식한 표정에 맞는 음악을 들려줌.
 
 
-## Installation
+## Requirement
 
-Clone the repository:
-```
-git clone https://github.com/petercunha/Emotion.git
-cd Emotion/
-```
+- Python 3.7.3
+- flask
+- pygame
 
-Install these dependencies with `pip3 install <module name>`
 -	tensorflow
 -	numpy
 -	scipy
@@ -22,9 +19,6 @@ Install these dependencies with `pip3 install <module name>`
 -	matplotlib
 -	h5py
 -	keras
-
-Once the dependencies are installed, you can run the project.
-`python3 emotions.py`
 
 
 ## To train new models for emotion classification
