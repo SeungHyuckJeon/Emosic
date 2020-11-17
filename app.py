@@ -41,12 +41,13 @@ music_sad = "music/sad.mp3"   # mp3 or mid file
 music_angry = "music/angry.mp3"
 music_happy = "music/happy.mp3"
 
+
 def playmusic(soundfile):
     if not pygame.mixer.music.get_busy():
         pygame.mixer.music.stop()
         pygame.mixer.music.load(soundfile)
         pygame.mixer.music.play()
-        pygame.mixer.music.fadeout(5000)
+        pygame.mixer.music.fadeout(10000)
 
 def gen(video):
     while True:
@@ -82,7 +83,7 @@ def gen(video):
                 emotion_mode = mode(emotion_window)
             except:
                 continue
-
+            
             if emotion_text == 'angry':
                 playmusic(music_angry)
                 color = emotion_probability * np.asarray((255, 0, 0))
